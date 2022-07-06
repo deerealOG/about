@@ -230,6 +230,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  position: relative;
+  left: 10px;
 }
 
 #avatar {
@@ -271,7 +273,6 @@ body {
 }
 .down {
   color: white;
-  display: none;
 }
 
 #title {
