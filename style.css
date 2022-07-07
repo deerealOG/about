@@ -326,14 +326,22 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
 }
 #sideNavCont {
-  background: rgba(38, 34, 98, 2);
+  background: #fff;
   position: absolute;
   top: 40px;
   left: 0;
   z-index: 100;
-  padding: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
   width: 100%;
   display: flex;
 }
@@ -345,6 +353,8 @@ body {
   align-items: center;
   text-align: center;
   display: none;
+  background:rgba(38, 34, 98, 0.8);
+  padding-bottom: 20px;
 }
 .side-navcont li {
   padding: 10px;
