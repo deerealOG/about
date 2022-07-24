@@ -210,7 +210,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   position: absolute;
   right: 5%;
 }
@@ -225,7 +225,7 @@ body {
 }
 #avatar img {
   height: auto;
-  width: 60px;
+  width: 50px;
 }
 #username {
   display: flex;
@@ -248,7 +248,7 @@ body {
   cursor: pointer;
 }
 #logo img {
-  height: 60px;
+  height: 50px;
 }
 
 #desktop {
@@ -257,6 +257,10 @@ body {
 .down {
   color: white;
   cursor: pointer;
+}
+#avat {
+  display: flex;
+  align-items: center;
 }
 
 
