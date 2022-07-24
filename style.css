@@ -213,6 +213,7 @@ body {
   gap: 20px;
   position: absolute;
   right: 5%;
+  border: solid;
 }
 
 #avatar {
@@ -228,17 +229,19 @@ body {
   width: 40px;
 }
 #username {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
-}
-#username p {
-  display: none;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
   line-height: 150%;
   color: #ffffff;
+}
+#username p {
+  
 }
 #logo {
 }
