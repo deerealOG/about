@@ -72,6 +72,7 @@ body {
   padding-left: 10px;
   transition: all 0.7s ease-in;
   position: fixed;
+  z-index: 40;
 }
 .menu-wrap {
   position: relative;
@@ -209,9 +210,9 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
-  position: relative;
-  left: 10px;
+  gap: 20px;
+  position: absolute;
+  right: 5%;
 }
 
 #avatar {
@@ -321,6 +322,7 @@ body {
   font-size: 20px;
   line-height: 140%;
   color: #ffffff;
+  padding-right: 7%;
 }
 #sideNavCont {
   background: #fff;
@@ -334,11 +336,14 @@ body {
   width: 100%;
   display: flex;
 }
+.view{
+  display: flex;
+}
 
 .side-navcont{
   position: absolute;
   padding: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   align-items: center;
@@ -689,13 +694,7 @@ aside {
     padding-left: 20px;
   }
 
-  #userdetails {
-    position: absolute;
-    left: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+ 
   #username {
     height: auto;
   }
