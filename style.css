@@ -210,10 +210,9 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   position: absolute;
   right: 5%;
-  border: solid;
 }
 
 #avatar {
