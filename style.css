@@ -1,3 +1,4 @@
+
 :root {
   --primary-color: #262262;
   --overlay-color: #262262;
@@ -13,25 +14,7 @@
 html {
   font-size: 16px;
 }
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f37821;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #262262;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #262262;
-}
 body {
   position: absolute;
   height: 100vh;
@@ -88,7 +71,7 @@ body {
   padding-right: 20px;
   padding-left: 10px;
   transition: all 0.7s ease-in;
-  position: relative;
+  position: fixed;
 }
 .menu-wrap {
   position: relative;
@@ -262,7 +245,7 @@ body {
   cursor: pointer;
 }
 #logo img {
-  height: 40px;
+  height: 60px;
 }
 
 #desktop {
@@ -272,6 +255,8 @@ body {
   color: white;
   cursor: pointer;
 }
+
+
 .iconify {
   cursor: pointer;
 }
@@ -284,6 +269,7 @@ body {
   background: #262262;
   width: auto;
   padding: 0px;
+  z-index: 300;
 }
 .profileDropdown {
   display: none;
@@ -304,6 +290,9 @@ body {
   font-family: "Poppins";
   font-weight: 600;
   text-decoration: none;
+}
+.profileDropdown a:hover{
+  color: #f37821;
 }
 .show {
   display: flex;
@@ -345,17 +334,19 @@ body {
   width: 100%;
   display: flex;
 }
+
 .side-navcont{
+  position: absolute;
   padding: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   text-align: center;
-  display: none;
-  background:rgba(38, 34, 98, 0.8);
-  padding-bottom: 20px;
+  background:rgb(81,78,129);
+  height: 100vh;
 }
+
 .side-navcont li {
   padding: 10px;
   list-style: none;
@@ -633,10 +624,7 @@ aside {
     font-size: 1.2rem;
     line-height: 140%;
   }
-  #dropDownCont {
-    right: 30%;
-    
-  }
+  
  
 @media all and (min-width: 992px) {
   body {
@@ -764,10 +752,9 @@ aside {
     line-height: 150%;
   }
   
-  #dropDownCont {
-    right: 0;
-  }
+  
 }
+
 @media all and (min-width: 1200px) {
   #navbar {
     position: fixed;

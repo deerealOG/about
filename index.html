@@ -21,6 +21,7 @@
         });
         $("#title").click(function (e) {
           $(".side-navcont").slideToggle(".show");
+          $("#title").click(function () {});
           e.stopPropagation();
         });
 
@@ -55,6 +56,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./hamburgers/dist/hamburgers.min.css" />
   </head>
   <body>
     <nav id="navbar">
@@ -89,19 +91,12 @@
           style="font-size: 20px"
         ></span>
       </span>
-      <span class="menu-wrap">
-        <input type="checkbox" name="" id="" class="toggler" />
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-          <div>
-            <ul>
-              <li><a href="#">Hire Engineer</a></li>
-              <li><a href="#">Find Job</a></li>
-              <li><a href="#">Post a Job</a></li>
-            </ul>
-          </div>
-        </div>
-      </span>
+
+      <!-- <button class="hamburger hamburger--collapse is-active" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> -->
     </nav>
     <div id="dropDownCont">
       <ul class="profileDropdown">
@@ -126,11 +121,11 @@
         About Me
         <div id="sideNavCont">
           <ul class="side-navcont">
-            <li style="background: #f8c097"><a href="">About Me</a></li>
+            <li><a href="">About Me</a></li>
             <li><a href="">Experience</a></li>
             <li><a href="">Skills</a></li>
             <li>
-              <a href="certifications.html">Certifications</a>
+              <a href="">Certifications</a>
             </li>
             <li><a href="">Contact</a></li>
           </ul>
