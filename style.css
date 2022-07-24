@@ -344,14 +344,16 @@ body {
 
 .side-navcont{
   position: absolute;
-  padding: 0;
+  padding: 0px;
   display: none;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  justify-content: center;
   text-align: center;
   background:rgb(81,78,129);
   height: 100vh;
+
 }
 
 .side-navcont li {
