@@ -56,7 +56,7 @@ body {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 140%;
 }
 
@@ -292,7 +292,7 @@ Animations
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   color: #ffffff;
   background: #f37821;
@@ -308,7 +308,7 @@ Animations
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 140%;
   color: #ffffff;
   padding-right: 7%;
@@ -407,7 +407,7 @@ Animations
 #smallContainer .desc {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 16px;
   line-height: 150%;
   color: #262262;
@@ -480,7 +480,7 @@ aside {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
   }
   #avatar img {
