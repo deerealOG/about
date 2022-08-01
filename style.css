@@ -62,12 +62,11 @@ body {
 
 #navbar {
   background: #262262;
-  height: 87px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 80px;
   padding-left: 2%;
   transition: all 0.7s ease-in;
   z-index: 40;
@@ -204,7 +203,7 @@ Animations
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+
 }
 #avatar img {
   height: auto;
@@ -231,7 +230,7 @@ Animations
   cursor: pointer;
 }
 #logo img {
-  height: 50px;
+  height: 3.375rem;
 }
 
 #desktop {
@@ -408,7 +407,7 @@ Animations
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: #262262;
   height: 500px;
@@ -419,7 +418,9 @@ aside {
 }
 
 @media all and (min-width: 375px) {
- 
+  #userdetails {
+    right: 16%;
+  }
  
   #category .title p {
     width: 260px;
@@ -476,6 +477,9 @@ aside {
     z-index: 10;
   }
 
+  #userdetails {
+    right: 12%;
+  }
   #username {
     font-family: "Poppins";
     font-style: normal;
@@ -483,10 +487,7 @@ aside {
     font-size: 1rem;
     line-height: 140%;
   }
-  #avatar img {
-    max-width: auto;
-    height: 100%;
-  }
+ 
   
   
 
@@ -513,12 +514,8 @@ aside {
   #navcta {
     display: none;
   }
-  #logo {
-    padding: 10px;
-  }
-  #logo img {
-    height: 60px;
-  }
+ 
+  
 
   #desktop {
     display: flex;
@@ -625,7 +622,7 @@ aside {
   #category .desc {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 150%;
   }
