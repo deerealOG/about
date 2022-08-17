@@ -10,23 +10,28 @@
       $(document).ready(function () {
         $(".down").click(function (e) {
           $(".profileDropdown").slideToggle(".show");
+          $(this).toggleClass('rotate');
           e.stopPropagation();
         });
 
         $(document).on("click", function (e) {
           if ($(e.target).closest(".profileDropdown").length === 0) {
             $(".profileDropdown").hide();
+            $(".down").toggleClass('rotate');
             e.stopPropagation();
           }
         });
         $("#title").click(function (e) {
           $(".side-navcont").slideToggle(".view");
+          $(".dropdown").toggleClass("rotate");
           $("#title").click(function () {});
           e.stopPropagation();
         });
+        
 
         $(document).on("click", function (e) {
           if ($(e.target).closest(".side-navcont").length === 0) {
+            $(".dropdown").toggleClass('rotate');
             $(".side-navcont").hide();
             e.stopPropagation();
           }
@@ -75,7 +80,7 @@
         <span
           class="iconify notification"
           data-icon="clarity:notification-outline-badged"
-          style="color: white; font-size: 30px"
+          style="color: white; font-size: 25px"
         ></span>
 
         <span id="username"> Divine </span>

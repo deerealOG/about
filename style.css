@@ -62,7 +62,7 @@ body {
 
 #navbar {
   background: #262262;
-  height: 80px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,6 +74,13 @@ body {
 .down {
   display: none;
 }
+.dropdown {
+  transition: all .5s linear;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: all .5s linear;
+}
 #toggle {
   display: none;
 }
@@ -84,7 +91,7 @@ body {
 .hamburger {
   position: absolute;
   top: 4em;
-  right: 5%;
+  right: 2%;
   margin-top: -45px;
   width: 2.2em;
   height: 40px;
@@ -93,10 +100,10 @@ body {
 
 .hamburger div {
   position: relative;
-  top: -6px;
+  top: -0.8em;
   right: 5%;
-  width: 2.6em;
-  height: 6px;
+  width: 2em;
+  height: 4px;
   border-radius: 3px;
   background: #f37821;
   margin-top: 8px;
@@ -156,7 +163,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -6px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -177,7 +184,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -6px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -207,7 +214,7 @@ Animations
 }
 #avatar img {
   height: auto;
-  width: 50px;
+  width: 42px;
 }
 #username {
   display: flex;
@@ -230,7 +237,7 @@ Animations
   cursor: pointer;
 }
 #logo img {
-  height: 3.375rem;
+  height: 47px;
 }
 
 #desktop {
@@ -401,7 +408,7 @@ Animations
   width: 200px;
 }
 #smallContainer {
-  width: 90%;
+  width: 100%;
 }
 #smallContainer .desc {
   font-family: "Poppins";
@@ -410,7 +417,7 @@ Animations
   font-size: 1rem;
   line-height: 150%;
   color: #262262;
-  height: 500px;
+  width: 100%;
 }
 
 aside {
@@ -470,7 +477,6 @@ aside {
     height: auto;
   }
   #navbar {
-    height: 80px;
     position: fixed;
     left: 0;
     top: 0;
@@ -508,9 +514,7 @@ aside {
   body {
     height: auto;
   }
-  #hamburger {
-    display: none;
-  }
+  
   #navcta {
     display: none;
   }
@@ -559,7 +563,11 @@ aside {
   #navbar {
     position: fixed;
     z-index: 10;
+    height: 80px;
    
+  }
+  #logo img {
+    height: 60px;
   }
 
  
