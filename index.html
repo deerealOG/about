@@ -17,7 +17,7 @@
         $(document).on("click", function (e) {
           if ($(e.target).closest(".profileDropdown").length === 0) {
             $(".profileDropdown").hide();
-            $(".down").toggleClass('rotate');
+            $(".down").hideClass('rotate');
             e.stopPropagation();
           }
         });
@@ -31,7 +31,7 @@
 
         $(document).on("click", function (e) {
           if ($(e.target).closest(".side-navcont").length === 0) {
-            $(".dropdown").toggleClass('rotate');
+            $(".dropdown").hideClass('rotate');
             $(".side-navcont").hide();
             e.stopPropagation();
           }
