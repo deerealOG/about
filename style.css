@@ -91,7 +91,7 @@ body {
 .hamburger {
   position: absolute;
   top: 4em;
-  right: 2%;
+  right: 5%;
   margin-top: -45px;
   width: 2.2em;
   height: 40px;
@@ -237,7 +237,7 @@ Animations
   cursor: pointer;
 }
 #logo img {
-  height: 47px;
+  height: 40px;
 }
 
 #desktop {
@@ -253,10 +253,13 @@ Animations
 .iconify {
   cursor: pointer;
 }
+.down,.dropdown {
+  transition: all .5s ease;
+}
 
 #dropDownCont {
   position: fixed;
-  top: 80px;
+  top: 60px;
   right: 0px;
   z-index: 100;
   background: #262262;
@@ -560,11 +563,10 @@ aside {
   #navbar {
     position: fixed;
     z-index: 10;
-    height: 80px;
    
   }
   #logo img {
-    height: 60px;
+    height: 45px;
   }
 
  
@@ -600,26 +602,14 @@ aside {
   }
   #title {
     top: 120px;
+    padding-left: 5vw;
   }
   
-  #bigContainer {
-    width: auto;
-    gap: 20px;
-  }
-  #bigContainer span {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 140%;
-    width: 300px;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
 
   #category {
     position: absolute;
     width: 80%;
+    left: 5vw;
  
   }
   #category .title p {
